@@ -1,11 +1,11 @@
 {
-  "id": "2c091202-31ea-49f7-9b2d-934b6bd8f2fb",
+  "id": "ba366bfb-8a63-4b79-b1d4-4796e8b13353",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
-    "public.todo": {
-      "name": "todo",
+    "public.user": {
+      "name": "user",
       "schema": "",
       "columns": {
         "id": {
@@ -20,12 +20,11 @@
           "primaryKey": false,
           "notNull": true
         },
-        "done": {
-          "name": "done",
-          "type": "boolean",
+        "cpf": {
+          "name": "cpf",
+          "type": "text",
           "primaryKey": false,
-          "notNull": true,
-          "default": false
+          "notNull": true
         }
       },
       "indexes": {},

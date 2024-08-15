@@ -1,7 +1,7 @@
-import { getData } from "@/actions/todoAction";
-import Todos from "@/components/todos";
+import { getData } from "@/actions/connectionAction";
+import Connections from "@/components/connections";
 
 export default async function Home() {
   const data = await getData();
-  return <Todos todos={data} />;
+  return <Connections connections={data} />;
 }
