@@ -3,4 +3,5 @@ export const user = pgTable("user", {
   id: integer("id").primaryKey(),
   name: text("text").notNull(),
   cpf: text("cpf").notNull(), 
+  idade: integer("idade").notNull(),
 });

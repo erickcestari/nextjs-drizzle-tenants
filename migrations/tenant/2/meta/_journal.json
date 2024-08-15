@@ -8,6 +8,13 @@
       "when": 1723732624655,
       "tag": "0000_dazzling_natasha_romanoff",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1723733284547,
+      "tag": "0001_fat_daredevil",
+      "breakpoints": true
     }
   ]
 }
