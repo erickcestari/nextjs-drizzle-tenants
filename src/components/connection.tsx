@@ -51,11 +51,6 @@ const Connection: FC<Props> = ({
   // Rendering the Connection component
   return (
     <div className="flex items-center gap-2 p-4 border-gray-200 border-solid border rounded-lg">
-      {/* Checkbox for marking the connection as done */}
-      <input
-        type="checkbox"
-        className="text-blue-200 rounded-sm h-4 w-4"
-      />
       {/* Input field for connection text */}
       <input
         type="text"

@@ -1,5 +1,3 @@
-// generate-configs.ts
-
 import { db } from '@/db/system/drizzle';
 import { connection } from '@/db/system/schema';
 import { config } from 'dotenv';
@@ -18,7 +16,7 @@ async function generateConfigs() {
 
       export default defineConfig({
         schema: "./src/db/tenant/schema.ts",
-        out: "./migrations/tenant/${conn.id}", // Change database_name accordingly
+        out: "./migrations/tenant/${conn.id}",
         dialect: "postgresql",
         dbCredentials: {
           url: "${conn.connection_url}",
@@ -38,6 +36,6 @@ generateConfigs().then(() => {
   exit(0);
 }).catch(err => {
   console.error('Error generating configs:', err);
-  process.exit(1); // Exit with a non-zero code to indicate failure
+  process.exit(1);
 });
 

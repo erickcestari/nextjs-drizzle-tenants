@@ -37,7 +37,7 @@ const Connections: FC<Props> = ({ connections }) => {
   // Rendering the Connection List component
   return (
     <main className="flex mx-auto max-w-xl w-full min-h-screen flex-col items-center p-16 text-black">
-      <div className="text-5xl font-medium text-white">To-do app</div>
+      <div className="text-5xl font-medium text-white">Connections</div>
       <div className="w-full flex flex-col mt-8 gap-2">
         {/* Mapping through connectionItems and rendering Connection component for each */}
         {connectionItems.map((connection) => (
