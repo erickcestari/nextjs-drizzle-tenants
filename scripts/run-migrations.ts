@@ -11,8 +11,12 @@ async function runMigrations() {
   for (const file of configFiles) {
     const configPath = resolve(__dirname, file);
     console.log(`Running migrations for ${file}`);
-    await execPromise(`bunx drizzle-kit generate --config ${configPath}`);
-    await execPromise(`bunx drizzle-kit migrate --config ${configPath}`);
+    const { stdout, stderr } = await execPromise(`bunx drizzle-kit generate --config ${configPath}`);
+    if (stdout) console.log(`stdout: ${stdout}`);
+    if (stderr) console.error(`stderr: ${stderr}`);
+    const { stdout: stdout1, stderr:  stderr1} = await execPromise(`bunx drizzle-kit migrate --config ${configPath}`);
+    if (stdout1) console.log(`stdout: ${stdout1}`);
+    if (stderr1) console.error(`stderr: ${stderr1}`);
     console.log(`Migrations completed for ${file}`);
   }
 }

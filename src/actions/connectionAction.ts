@@ -12,7 +12,7 @@ export const getData = async () => {
 export const addConnection = async (id: number, connection_url: string) => {
   await db.insert(connection).values({
     id: id,
-    connection_url: connection_url,
+    connectionUrl: connection_url,
   });
 };
 
@@ -26,7 +26,7 @@ export const editConnection = async (id: number, connection_url: string) => {
   await db
     .update(connection)
     .set({
-      connection_url: connection_url,
+      connectionUrl: connection_url,
     })
     .where(eq(connection.id, id));
 

@@ -1,4 +1,4 @@
 export type connectionType = {
   id: number;
-  connectionUrl: string;
+  name: string;
 };

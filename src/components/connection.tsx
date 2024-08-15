@@ -17,7 +17,7 @@ const Connection: FC<Props> = ({
   const [editing, setEditing] = useState(false);
 
   // State for handling text input
-  const [text, setText] = useState(connection.connection_url);
+  const [text, setText] = useState(connection.connectionUrl);
 
   // Event handler for text input change
   const handleTextChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -38,7 +38,7 @@ const Connection: FC<Props> = ({
   // Event handler for canceling the edit mode
   const handleCancel = () => {
     setEditing(false);
-    setText(connection.connection_url);
+    setText(connection.connectionUrl);
   };
 
   // Event handler for deleting a connection item

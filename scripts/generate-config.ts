@@ -19,14 +19,14 @@ async function generateConfigs() {
         out: "./migrations/tenant/${conn.id}",
         dialect: "postgresql",
         dbCredentials: {
-          url: "${conn.connection_url}",
+          url: "${conn.connectionUrl}",
         },
       });
     `;
 
     const configPath = resolve(__dirname, `tenant_drizzle.config.${conn.id}.ts`);
     writeFileSync(configPath, configContent, 'utf-8');
-    console.log(`Generated config for ${conn.connection_url} at ${configPath}`);
+    console.log(`Generated config for ${conn.connectionUrl} at ${configPath}`);
   }
   console.log('Configs generated successfully');
 }

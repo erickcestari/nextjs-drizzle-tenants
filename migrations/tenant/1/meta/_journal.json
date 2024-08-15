@@ -15,6 +15,13 @@
       "when": 1723733279991,
       "tag": "0001_military_union_jack",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1723744403995,
+      "tag": "0002_empty_wolfpack",
+      "breakpoints": true
     }
   ]
 }

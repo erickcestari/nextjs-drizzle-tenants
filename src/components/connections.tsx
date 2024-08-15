@@ -17,7 +17,7 @@ const Connections: FC<Props> = ({ connections }) => {
   const createConnection = (text: string) => {
     const id = (connectionItems.at(-1)?.id || 0) + 1;
     addConnection(id, text);
-    setConnectionItems((prev) => [...prev, { id: id, connection_url: text }]);
+    setConnectionItems((prev) => [...prev, { id: id, connectionUrl: text }]);
   };
 
   // Function to change the text of a connection item

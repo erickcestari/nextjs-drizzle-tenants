@@ -1,7 +1,5 @@
-import { integer, text, boolean, pgTable } from "drizzle-orm/pg-core";
-export const user = pgTable("user", {
+import { integer, text, pgTable } from "drizzle-orm/pg-core";
+export const company = pgTable("company", {
   id: integer("id").primaryKey(),
-  name: text("text").notNull(),
-  cpf: text("cpf").notNull(), 
-  idade: integer("idade").notNull(),
+  name: text("name").notNull(),
 });

@@ -15,6 +15,13 @@
       "when": 1723733284547,
       "tag": "0001_fat_daredevil",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1723744430838,
+      "tag": "0002_ambiguous_weapon_omega",
+      "breakpoints": true
     }
   ]
 }

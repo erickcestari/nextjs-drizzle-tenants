@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate-system": "bunx drizzle-kit generate --config system_drizzle.config.ts",
+    "migrate-system": "bunx drizzle-kit migrate --config system_drizzle.config.ts",
+    "create-config-tenant": "bun run ./scripts/generate-config.ts",
+    "run-migrations-tenant": "bun run ./scripts/run-migrations.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
